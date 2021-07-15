@@ -1,0 +1,133 @@
+.whiteSection{
+    padding: 8rem 0 0;
+}
+
+.sectionHeader{
+    color: $secondry;
+
+    h2{
+        font-size: 3.2rem;
+        position: relative;
+        font-family: 'Main';
+        padding-bottom: 1rem;
+
+        &:after{
+            content: "";
+            left: 0;
+            top: 100%;
+            position: absolute;
+            background-color: $primary;
+            height: 1px;
+            width: 4.8rem;
+        }
+    }
+
+    p{
+        margin-bottom: 0;
+        margin-top: 3.2rem;
+        font-size: 1.8rem;
+        max-width: 70%;
+        color: $light-font;
+    }
+}
+
+.tabsSection{
+  margin-top: 3.2rem;
+
+  .tab{
+    border-radius: 0.8rem;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    //border: 1px solid $border;
+
+    button{
+      padding: 2.4rem;
+      border: 1px solid $border;
+      width: 100%;
+      font-size: 1.6rem;
+      text-align: left;
+      background-color: $white-color;
+      position: relative;
+
+      &:first-of-type{
+        border-radius: 0.8rem 0 0 0.8rem;
+      }
+
+      &:last-of-type{
+        border-radius:  0 0.8rem 0.8rem 0;
+      }
+
+      &:hover{
+        background-color: transparent;
+      }
+
+      &.active{
+        background-color: transparent;
+        border-left: 0.6rem solid $primary;
+      }
+    }
+  }
+
+  .tabcontent {
+    display: none;
+    padding: 3.2rem 0;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+}
+
+.tabInfo{
+  padding: 2.4rem 3.2rem;
+
+  h2{
+    font-size: 2.4rem;
+    position: relative;
+    font-family: 'Main';
+    padding-bottom: 1rem;
+
+    &:after{
+        content: "";
+        left: 0;
+        top: 100%;
+        position: absolute;
+        background-color: $primary;
+        height: 1px;
+        width: 4.8rem;
+    }
+  }
+
+  p{
+    color: $light-font;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    margin-top: 1.6rem;
+
+    &:first-of-type{
+      margin-top: 3.2rem;
+    }
+  }
+}
+
+
+  
+  
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+  
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

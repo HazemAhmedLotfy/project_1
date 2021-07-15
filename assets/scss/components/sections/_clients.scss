@@ -1,0 +1,88 @@
+.midSections{
+    text-align: center;
+    padding: 8rem 0;
+    
+    h2{
+        &:after{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    p{
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.logosSlider{
+    margin-top: 4.2rem;
+
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoItem{
+        transition: all 0.3s ease;
+        height: 11.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+
+        &:hover{
+            img{
+                -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(0%);
+            }
+        }
+    }
+
+    .owl-stage-outer{
+        z-index: 2;
+    }
+
+    .owl-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 0%;
+        position: absolute;
+        z-index: 1;
+        transform: translateY(0%);
+        height: 100%;
+        margin-top: 0 !important;
+
+        button{
+            color: $slider-arrow !important;
+            font-size: 2rem !important;
+            font-weight: bolder;
+            position: relative;
+            transition: all 0.3 ease;
+
+            &:hover{
+                background-color: transparent !important;
+                color: $primary !important;
+            }
+
+            &.owl-prev{
+                left: -20px;
+                transform: rotate(90deg);
+            }
+
+            
+            &.owl-next{
+                right: -20px;
+                transform: rotate(270deg);
+            }
+        }
+    }
+}

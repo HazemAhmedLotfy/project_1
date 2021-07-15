@@ -1,0 +1,135 @@
+.eteMenu{
+    width: 100%;
+
+    .navbar{
+        padding: 4.8rem 0;
+
+        &.fixed-top{
+            background-color: $secondry;
+            padding: 2.8rem 0;
+            box-shadow: 0 0 15px rgba($dark-grey, 1);
+        }
+    }
+
+    .navbar-nav{
+        .nav-item{
+            margin-right: 3.6rem;
+        }
+
+        .nav-link{
+            font-size: 1.6rem;
+            color: $slider-arrow;
+        }
+
+        .dropLang{
+            padding-left: 2.4rem;
+            border-left: 1px solid $white-color;
+            
+            .nav-link{
+                display: flex;
+                justify-content: center;
+                align-items: center;    
+            }
+            
+            i{
+                font-size: 2rem;
+
+                &:last-of-type{
+                    margin-left: 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+.bannerSection{
+    height: 100vh;
+    position: relative;
+
+    .container{
+        height: 100%;
+    }
+}
+
+.bannerImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.bannerInner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $white-color;
+    justify-content: space-between;
+    
+}
+
+.bannerText{
+    text-align: center;
+
+    span{
+        font-size: 3.8rem;
+        font-family: 'Main';
+        text-align: center;
+        display: inline-block;
+        width: 60%;
+
+        span{
+            color: $primary;
+            width: auto;
+        }
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 1.6rem;
+        margin-bottom: 0;
+    }
+
+    button{
+        background-color: $primary;
+        color: $white-color;
+        font-size: 1.8rem;
+        font-family: 'Bold-body';
+        border-radius: 0.8rem;
+        padding: 1.6rem 4.4rem;
+        margin-top: 3rem;
+    }
+}
+
+.goToNxtSection{
+    a{
+        text-decoration: none;
+        border-radius: 50%;
+        width: 4.8rem;
+        height: 4.8rem;
+        border: 2px solid $white-color;
+        background-color: transparent;
+        color: $primary;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        transition: all 0.3s ease;
+
+        &:hover{
+            color: $primary;
+            background-color: $white-color;
+        }
+    }
+}
