@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="linkedin-logo-svgrepo-com">
+    <path d="M1.4423 0C0.645261 0 0.000128949 0.647406 0 1.444C0 2.24138 0.645132 2.88865 1.44242 2.88865C2.23752 2.88865 2.88356 2.24138 2.88356 1.444C2.88356 0.647277 2.2374 0 1.4423 0Z" transform="matrix(1 0 0 1 4.2188475E-15 -1.0880186E-14)" id="Path" fill="#131313" fill-opacity="0.5" stroke="none" />
+    <path d="M0 0L2.48704 0L2.48704 8.01559L0 8.01559L0 0Z" transform="translate(0.19832367 3.9844134)" id="Rectangle" fill="#131313" fill-opacity="0.5" stroke="none" />
+    <path d="M4.77176 0C3.56196 0 2.75074 0.664456 2.4187 1.29455L2.38543 1.29455L2.38543 0.199311L0.000128949 0.199311L0 0.199311L0 8.21477L2.48485 8.21477L2.48485 4.24947C2.48485 3.20409 2.68356 2.19152 3.97743 2.19152C5.25274 2.19152 5.26976 3.38713 5.26976 4.31651L5.26976 8.21464L7.755 8.21464L7.755 3.81817C7.755 1.66011 7.29014 0 4.77176 0Z" transform="translate(4.245003 3.7851024)" id="Path" fill="#131313" fill-opacity="0.5" stroke="none" />
+  </g>
+</svg>

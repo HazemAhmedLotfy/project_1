@@ -9,7 +9,7 @@
         font-size: 3.2rem;
         position: relative;
         font-family: 'Main';
-        padding-bottom: 1rem;
+        padding-bottom: 2.4rem;
 
         &:after{
             content: "";
@@ -17,14 +17,14 @@
             top: 100%;
             position: absolute;
             background-color: $primary;
-            height: 1px;
+            height: 2px;
             width: 4.8rem;
         }
     }
 
     p{
         margin-bottom: 0;
-        margin-top: 3.2rem;
+        margin-top: 3.9rem;
         font-size: 1.8rem;
         max-width: 70%;
         color: $light-font;
@@ -49,6 +49,7 @@
       text-align: left;
       background-color: $white-color;
       position: relative;
+      text-transform: capitalize;
 
       &:first-of-type{
         border-radius: 0.8rem 0 0 0.8rem;

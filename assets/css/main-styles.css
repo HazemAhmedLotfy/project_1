@@ -33,7 +33,7 @@
 @font-face {
   font-family: 'icomoon';
   src: url("/assets/fonts/icons/icomoon.eot");
-  src: url("/assets/fonts/icons/icomoon.eot?dc9e1b#iefix") format("embedded-opentype"), url("/assets/fonts/icons/icomoon.ttf?dc9e1b") format("truetype"), url("/assets/fonts/icons/icomoon.woff?dc9e1b") format("woff"), url("/assets/fonts/icons/icomoon.svg?dc9e1b#icomoon") format("svg");
+  src: url("/assets/fonts/icons/icomoon.eot?5k8urw#iefix") format("embedded-opentype"), url("/assets/fonts/icons/icomoon.ttf?5k8urw") format("truetype"), url("/assets/fonts/icons/icomoon.woff?5k8urw") format("woff"), url("/assets/fonts/icons/icomoon.svg?5k8urw#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -51,6 +51,33 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location:before {
+  content: "\e906";
+  color: #595959;
+}
+
+.icon-mail:before {
+  content: "\e907";
+  color: #595959;
+}
+
+.icon-phone:before {
+  content: "\e908";
+  color: #595959;
+}
+
+.icon-facbeook:before {
+  content: "\e909";
+}
+
+.icon-Instagram:before {
+  content: "\e90a";
+}
+
+.icon-linked:before {
+  content: "\e90b";
 }
 
 .icon-language:before {
@@ -91,6 +118,10 @@ body p {
   text-align: justify;
 }
 
+body .modal-backdrop {
+  background-color: transparent;
+}
+
 .eteMenu {
   width: 100%;
 }
@@ -101,18 +132,20 @@ body p {
 
 .eteMenu .navbar.fixed-top {
   background-color: #131313;
-  padding: 2.8rem 0;
+  padding: 1rem 0;
   -webkit-box-shadow: 0 0 15px #202020;
           box-shadow: 0 0 15px #202020;
 }
 
 .eteMenu .navbar-nav .nav-item {
-  margin-right: 3.6rem;
+  margin-right: 3rem;
 }
 
 .eteMenu .navbar-nav .nav-link {
   font-size: 1.6rem;
   color: #c2c2c2;
+  background-color: transparent;
+  border: transparent;
 }
 
 .eteMenu .navbar-nav .dropLang {
@@ -260,7 +293,7 @@ body p {
   font-size: 3.2rem;
   position: relative;
   font-family: 'Main';
-  padding-bottom: 1rem;
+  padding-bottom: 2.4rem;
 }
 
 .textSection h2:after {
@@ -275,13 +308,14 @@ body p {
 
 .textSection p {
   margin-bottom: 0;
-  margin-top: 1.6rem;
+  margin-top: 2.2rem;
   font-size: 1.8rem;
   width: 90%;
+  line-height: 3.2rem;
 }
 
 .textSection p:first-of-type {
-  margin-top: 2.4rem;
+  margin-top: 3.9rem;
 }
 
 .iconsList .iconItem {
@@ -338,7 +372,7 @@ body p {
   font-size: 3.2rem;
   position: relative;
   font-family: 'Main';
-  padding-bottom: 1rem;
+  padding-bottom: 2.4rem;
 }
 
 .sectionHeader h2:after {
@@ -347,13 +381,13 @@ body p {
   top: 100%;
   position: absolute;
   background-color: #FF6F00;
-  height: 1px;
+  height: 2px;
   width: 4.8rem;
 }
 
 .sectionHeader p {
   margin-bottom: 0;
-  margin-top: 3.2rem;
+  margin-top: 3.9rem;
   font-size: 1.8rem;
   max-width: 70%;
   color: #505050;
@@ -380,6 +414,7 @@ body p {
   text-align: left;
   background-color: #fff;
   position: relative;
+  text-transform: capitalize;
 }
 
 .tabsSection .tab button:first-of-type {
@@ -481,11 +516,13 @@ body p {
   text-align: center;
 }
 
-.logosSlider {
+.logosSlider,
+.clientSlider {
   margin-top: 4.2rem;
 }
 
-.logosSlider .item {
+.logosSlider .item,
+.clientSlider .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,7 +534,8 @@ body p {
           align-items: center;
 }
 
-.logosSlider .logoItem {
+.logosSlider .logoItem,
+.clientSlider .logoItem {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   height: 11.6rem;
@@ -512,25 +550,31 @@ body p {
           align-items: center;
 }
 
-.logosSlider .logoItem img {
+.logosSlider .logoItem img,
+.clientSlider .logoItem img {
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  opacity: 0.5;
 }
 
-.logosSlider .logoItem:hover img {
+.logosSlider .logoItem:hover img,
+.clientSlider .logoItem:hover img {
   -webkit-filter: grayscale(0%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  opacity: 1;
 }
 
-.logosSlider .owl-stage-outer {
+.logosSlider .owl-stage-outer,
+.clientSlider .owl-stage-outer {
   z-index: 2;
 }
 
-.logosSlider .owl-nav {
+.logosSlider .owl-nav,
+.clientSlider .owl-nav {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,7 +594,8 @@ body p {
   margin-top: 0 !important;
 }
 
-.logosSlider .owl-nav button {
+.logosSlider .owl-nav button,
+.clientSlider .owl-nav button {
   color: #c2c2c2 !important;
   font-size: 2rem !important;
   font-weight: bolder;
@@ -559,18 +604,21 @@ body p {
   transition: all 0.3 ease;
 }
 
-.logosSlider .owl-nav button:hover {
+.logosSlider .owl-nav button:hover,
+.clientSlider .owl-nav button:hover {
   background-color: transparent !important;
   color: #FF6F00 !important;
 }
 
-.logosSlider .owl-nav button.owl-prev {
+.logosSlider .owl-nav button.owl-prev,
+.clientSlider .owl-nav button.owl-prev {
   left: -20px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.logosSlider .owl-nav button.owl-next {
+.logosSlider .owl-nav button.owl-next,
+.clientSlider .owl-nav button.owl-next {
   right: -20px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -585,7 +633,7 @@ body p {
   font-size: 3.2rem;
   position: relative;
   font-family: 'Main';
-  padding-bottom: 1rem;
+  padding-bottom: 2.4rem;
 }
 
 .chooseUsTextArea h2:after {
@@ -606,13 +654,13 @@ body p {
 }
 
 .chooseUsTextArea p:first-of-type {
-  margin-top: 2.4rem;
+  margin-top: 3.9rem;
 }
 
 .chooseUsTextArea h4 {
   font-size: 1.6rem;
   color: #505050;
-  margin: 1.6rem 0;
+  margin: 2.5rem 0;
 }
 
 .chooseUsTextArea ul {
@@ -713,7 +761,7 @@ body p {
 
 .chairmanImg {
   border-radius: 0.8rem;
-  height: 40rem;
+  height: 51.3rem;
   background-color: #303030;
   padding: 2rem;
   display: -webkit-box;
@@ -736,7 +784,9 @@ body p {
 }
 
 .chairmanImg img {
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
 }
 
 .textSection span {
@@ -754,5 +804,239 @@ body p {
 
 .chairmanText p {
   width: 100%;
+}
+
+.eteFooter .sectionTitle h2 {
+  font-size: 1.6rem;
+  color: #595959;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.eteFooter .sectionTitle h2 span {
+  width: 2.4rem;
+  background-color: #595959;
+  height: 1px;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.eteFooter .sectionTitle p {
+  color: #595959;
+  font-size: 2rem;
+  font-family: 'Bold-body';
+  margin-bottom: 3rem;
+}
+
+.eteFooter .greySection {
+  padding: 4.8rem 0;
+}
+
+.eteFooter .whiteSection {
+  padding: 2.4rem 0;
+}
+
+.contactsList {
+  padding: 0;
+  list-style: none;
+}
+
+.contactsList li {
+  margin-bottom: 2rem;
+  color: #595959;
+  font-size: 1.4rem;
+}
+
+.contactsList li i {
+  margin-right: 0.8rem;
+  font-size: 1.35rem;
+}
+
+.socialMediaLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialMediaLinks h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #131313;
+  margin-right: 1.6rem;
+}
+
+.socialMediaLinks span a {
+  color: #131313;
+  opacity: 0.5;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 1.7rem;
+  position: relative;
+}
+
+.socialMediaLinks span a i {
+  padding-right: 1.4rem;
+}
+
+.socialMediaLinks span a:not(:last-of-type):after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #131313;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+.copyRightsText {
+  color: #131313;
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+}
+
+.eteModal {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.eteModal .modal-content {
+  padding: 4.8rem;
+  border-radius: 0.8rem;
+}
+
+.eteModal .modal-dialog {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  max-width: 550px;
+}
+
+.eteModal .modal-header {
+  border: none;
+}
+
+.eteModal .modal-title {
+  font-size: 3.2rem;
+  font-family: 'Main';
+  color: #131313;
+}
+
+.eteModal .modal-body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.eteModal .modal-body form input {
+  margin-bottom: 1.7rem;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  border: 1px solid #595959;
+  font-size: 1.4rem;
+}
+
+.eteModal .modal-body form input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #595959;
+  opacity: 0.5;
+}
+
+.eteModal .modal-body form input:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #595959;
+  opacity: 0.5;
+}
+
+.eteModal .modal-body form input::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #595959;
+  opacity: 0.5;
+}
+
+.eteModal .modal-body form input::placeholder {
+  text-transform: capitalize;
+  color: #595959;
+  opacity: 0.5;
+}
+
+.eteModal .modal-body form textarea {
+  margin-bottom: 0;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  border: 1px solid #595959;
+  font-size: 1.4rem;
+  min-height: 11rem;
+  max-height: 11rem;
+}
+
+.eteModal .modal-body form textarea::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #595959;
+  opacity: 0.5;
+}
+
+.eteModal .modal-body form textarea:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #595959;
+  opacity: 0.5;
+}
+
+.eteModal .modal-body form textarea::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #595959;
+  opacity: 0.5;
+}
+
+.eteModal .modal-body form textarea::placeholder {
+  text-transform: capitalize;
+  color: #595959;
+  opacity: 0.5;
+}
+
+.eteModal .modal-footer {
+  border: none;
+  margin-top: 2.4rem;
+  padding-top: 0;
+}
+
+.eteModal .modal-footer button {
+  width: 100%;
+  padding: 1.6rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: 'Bold-body';
+  background-color: #FF6F00;
+  border-radius: 1rem;
+  border: none;
+}
+
+.eteModal .modal-footer button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=main-styles.css.map */

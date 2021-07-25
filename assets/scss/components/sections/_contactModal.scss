@@ -1,0 +1,86 @@
+.eteModal{
+    background-color: rgba($black-color, 0.7);
+    .modal-content{
+        padding: 4.8rem;
+        border-radius: 0.8rem;
+    }
+
+    .modal-dialog{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        max-width: 550px;
+    }
+
+    .modal-header{
+        border: none;
+    }
+
+    .modal-title{
+        font-size: 3.2rem;
+        font-family: 'Main';
+        color: $secondry;
+    }
+
+    .modal-body{
+        form{
+            display: flex;
+            flex-direction: column;
+
+            input{
+                margin-bottom: 1.7rem;
+                padding: 1.6rem;
+                border-radius: 1rem;
+                border: 1px solid $sub-title;
+                font-size: 1.4rem;
+
+                &::placeholder{
+                    text-transform: capitalize;
+                    color: $sub-title;
+                    opacity: 0.5;
+                }
+            }
+
+            textarea{
+                margin-bottom: 0;
+                padding: 1.6rem;
+                border-radius: 1rem;
+                border: 1px solid $sub-title;
+                font-size: 1.4rem;
+                min-height: 11rem;
+                max-height: 11rem;
+
+                &::placeholder{
+                    text-transform: capitalize;
+                    color: $sub-title;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .modal-footer{
+        border: none;
+        margin-top: 2.4rem;
+        padding-top: 0;
+
+        button{
+            width: 100%;
+            padding: 1.6rem;
+            text-align: center;
+            font-size: 1.6rem;
+            font-family: 'Bold-body';
+            background-color: $primary;
+            border-radius: 1rem;
+            border: none;
+
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
+

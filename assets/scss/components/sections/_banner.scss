@@ -6,19 +6,21 @@
 
         &.fixed-top{
             background-color: $secondry;
-            padding: 2.8rem 0;
+            padding: 1rem 0;
             box-shadow: 0 0 15px rgba($dark-grey, 1);
         }
     }
 
     .navbar-nav{
         .nav-item{
-            margin-right: 3.6rem;
+            margin-right: 3rem;
         }
 
         .nav-link{
             font-size: 1.6rem;
             color: $slider-arrow;
+            background-color: transparent;
+            border: transparent;
         }
 
         .dropLang{

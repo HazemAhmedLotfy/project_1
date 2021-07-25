@@ -48,10 +48,10 @@
 @font-face {
     font-family: 'icomoon';
     src:  url('/assets/fonts/icons/icomoon.eot');
-    src:  url('/assets/fonts/icons/icomoon.eot?dc9e1b#iefix') format('embedded-opentype'),
-      url('/assets/fonts/icons/icomoon.ttf?dc9e1b') format('truetype'),
-      url('/assets/fonts/icons/icomoon.woff?dc9e1b') format('woff'),
-      url('/assets/fonts/icons/icomoon.svg?dc9e1b#icomoon') format('svg');
+    src:  url('/assets/fonts/icons/icomoon.eot?5k8urw#iefix') format('embedded-opentype'),
+      url('/assets/fonts/icons/icomoon.ttf?5k8urw') format('truetype'),
+      url('/assets/fonts/icons/icomoon.woff?5k8urw') format('woff'),
+      url('/assets/fonts/icons/icomoon.svg?5k8urw#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -72,6 +72,27 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-location:before {
+    content: "\e906";
+    color: #595959;
+  }
+  .icon-mail:before {
+    content: "\e907";
+    color: #595959;
+  }
+  .icon-phone:before {
+    content: "\e908";
+    color: #595959;
+  }
+  .icon-facbeook:before {
+    content: "\e909";
+  }
+  .icon-Instagram:before {
+    content: "\e90a";
+  }
+  .icon-linked:before {
+    content: "\e90b";
+  }
   .icon-language:before {
     content: "\e905";
   }

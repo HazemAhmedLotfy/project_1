@@ -8,7 +8,7 @@
         font-size: 3.2rem;
         position: relative;
         font-family: 'Main';
-        padding-bottom: 1rem;
+        padding-bottom: 2.4rem;
 
         &:after{
             content: "";
@@ -28,14 +28,14 @@
         color: $light-font;
 
         &:first-of-type{
-            margin-top: 2.4rem;
+            margin-top: 3.9rem;
         }
     }
 
     h4{
         font-size: 1.6rem;
         color: $light-font;
-        margin: 1.6rem 0;
+        margin: 2.5rem 0;
     }
 
     ul{

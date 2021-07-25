@@ -40,6 +40,28 @@ $('.logosSlider').owlCarousel({
     }
 });
 
+$('.clientSlider').owlCarousel({
+  loop: false,
+  margin: 0,
+  autoplay: false,
+  smartSpeed: 500,
+  nav: true,
+  dots: false,
+  navText: ['<i class="icon-arrow-down"></i>','<i class="icon-arrow-down"></i>'],
+  lazyLoad:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:4
+      },
+      1000:{
+          items:7
+      }
+  }
+});
+
 $('.whyUsSlider').owlCarousel({
   loop: false,
   margin: 0,

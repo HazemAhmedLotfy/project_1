@@ -1,6 +1,6 @@
 .chairmanImg{
     border-radius: 0.8rem;
-    height: 40rem;
+    height: 51.3rem;
     background-color: $image-border;
     padding: 2rem;
     display: flex;
@@ -15,7 +15,9 @@
         border-radius: 0.8rem;
     }
     img{
-        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
     }
 }
 
