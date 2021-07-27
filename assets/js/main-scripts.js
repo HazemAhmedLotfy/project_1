@@ -96,7 +96,9 @@ document.addEventListener("DOMContentLoaded", function(){
           document.body.style.paddingTop = '0';
         } 
     });
-  });
+});
 
+$("#bannerVid").each(function(){ this.play(); });
+// $('#bannerVid').play();
 
 AOS.init();

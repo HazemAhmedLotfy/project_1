@@ -1,5 +1,22 @@
 .eteModal{
     background-color: rgba($black-color, 0.7);
+
+    .btn-close{
+        right: 2rem;
+        left: auto;
+        position: absolute;
+        top: 2rem;
+        font-weight: bolder;
+        background-image: none;
+        opacity: 1;
+        
+        i{
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: $secondry;
+        }
+    }
+
     .modal-content{
         padding: 4.8rem;
         border-radius: 0.8rem;
