@@ -33,16 +33,16 @@
         align-items: center;
 
         img{
-            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            filter: grayscale(100%);
+            // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            // filter: grayscale(100%);
             transition: all 0.3s ease;
-            opacity: 0.5;
+            //opacity: 0.5;
         }
 
         &:hover{
             img{
-                -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-                filter: grayscale(0%);
+                // -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+                // filter: grayscale(0%);
                 opacity: 1;
             }
         }
