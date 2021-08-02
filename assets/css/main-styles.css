@@ -155,6 +155,7 @@ body .modal-backdrop {
 .eteMenu .navbar-nav .dropLang {
   padding-left: 2.4rem;
   border-left: 1px solid #fff;
+  margin: 0;
 }
 
 .eteMenu .navbar-nav .dropLang .nav-link {
@@ -827,11 +828,25 @@ body .modal-backdrop {
 .chairmanText {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 5rem;
+  text-align: center;
+  width: 89%;
+  margin: auto;
+}
+
+.chairmanText h2 {
+  display: inline-block;
+}
+
+.chairmanText h2:after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .chairmanText p {
   width: 100%;
+  text-align: center;
+  letter-spacing: 0.1rem;
 }
 
 .eteFooter .sectionTitle h2 {

@@ -32,9 +32,23 @@
 
 .chairmanText{
     box-sizing: border-box;
-    padding-left: 5rem;
+    //padding-left: 5rem;
+    text-align: center;
+    width: 89%;
+    margin: auto;
+
+    h2{
+        display: inline-block;
+
+        &:after{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 
     p{
         width: 100%;
+        text-align: center;
+        letter-spacing: 0.1rem;
     }
 }
