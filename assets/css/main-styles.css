@@ -666,12 +666,47 @@ body .modal-backdrop {
           align-items: center;
 }
 
-.clientSlider .owl-stage .owl-item:nth-child(3) .item {
-  width: 15rem;
-  height: 15rem;
+.clientCont {
+  position: relative;
+}
+
+.clientCont .mainItem {
+  position: absolute;
+  z-index: 3;
+  width: 13rem;
+  height: 13rem;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clientCont .mainItem .logoItem {
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
+  background-color: #fff;
   -webkit-box-shadow: 0 0 10px rgba(19, 19, 19, 0.1);
           box-shadow: 0 0 10px rgba(19, 19, 19, 0.1);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .greySection {

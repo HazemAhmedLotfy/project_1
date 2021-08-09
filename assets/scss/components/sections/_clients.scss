@@ -99,12 +99,41 @@
             align-items: center;
             &:nth-child(3){
                 .item{
-                    width: 15rem;
-                    height: 15rem;
-                    border-radius: 50%;
-                    box-shadow: 0 0 10px rgba($secondry, 0.1)
+                    // width: 15rem;
+                    // height: 15rem;
+                    // border-radius: 50%;
+                    // box-shadow: 0 0 10px rgba($secondry, 0.1)
                 }
             }
+        }
+    }
+}
+
+.clientCont{
+    position: relative;
+
+    .mainItem{
+        position: absolute;
+        z-index: 3;
+        width: 13rem;
+        height: 13rem;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logoItem{
+            width: 18rem;
+            height: 18rem;
+            border-radius: 50%;
+            background-color: $white-color;
+            box-shadow: 0 0 10px rgba($secondry, 0.1);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

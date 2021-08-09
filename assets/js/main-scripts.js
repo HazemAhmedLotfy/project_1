@@ -51,7 +51,8 @@ $('.clientSlider').owlCarousel({
     dots: false,
     navText: ['<i class="icon-arrow-down"></i>','<i class="icon-arrow-down"></i>'],
     lazyLoad:true,
-    slideBy: 4,
+    //slideBy: 4,
+    animateOut: 'fadeOut',
     responsive:{
         0:{
             items:1
@@ -63,6 +64,14 @@ $('.clientSlider').owlCarousel({
             items:5
         }
     }
+});
+
+$('.clientSlider').on('translate.owl.carousel', function(event) {
+    $(this).find(".item").hide();
+});
+
+$('.clientSlider').on('translated.owl.carousel', function(event) {
+    $(this).find(".item").fadeIn(2500);
 });
 
 $('.whyUsSlider').owlCarousel({
