@@ -44,13 +44,14 @@ $('.logosSlider').owlCarousel({
 $('.clientSlider').owlCarousel({
     loop: false,
     margin: 0,
-    autoplay: true,
-    autoplayTimeout: 3000,
+    autoplay: false,
+    //autoplayTimeout: 3000,
     smartSpeed: 500,
     nav: true,
     dots: false,
     navText: ['<i class="icon-arrow-down"></i>','<i class="icon-arrow-down"></i>'],
     lazyLoad:true,
+    slideBy: 4,
     responsive:{
         0:{
             items:1
@@ -59,7 +60,7 @@ $('.clientSlider').owlCarousel({
             items:4
         },
         1000:{
-            items:7
+            items:5
         }
     }
 });
