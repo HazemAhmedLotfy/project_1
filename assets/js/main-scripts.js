@@ -42,14 +42,14 @@ $('.logosSlider').owlCarousel({
 });
 
 $('.clientSlider').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 0,
-    autoplay: false,
-    //autoplayTimeout: 3000,
+    autoplay: true,
+    autoplayTimeout: 5000,
     smartSpeed: 500,
-    nav: true,
+    //nav: true,
     dots: false,
-    navText: ['<i class="icon-arrow-down"></i>','<i class="icon-arrow-down"></i>'],
+    //navText: ['<i class="icon-arrow-down"></i>','<i class="icon-arrow-down"></i>'],
     lazyLoad:true,
     //slideBy: 4,
     animateOut: 'fadeOut',
