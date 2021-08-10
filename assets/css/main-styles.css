@@ -260,6 +260,7 @@ body .modal-backdrop {
   margin-top: 1.6rem;
   margin-bottom: 0;
   letter-spacing: 0.5px;
+  text-transform: capitalize;
 }
 
 .bannerText button {
@@ -707,6 +708,32 @@ body .modal-backdrop {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .greySection {

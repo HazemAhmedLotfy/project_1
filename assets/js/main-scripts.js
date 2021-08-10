@@ -71,7 +71,7 @@ $('.clientSlider').on('translate.owl.carousel', function(event) {
 });
 
 $('.clientSlider').on('translated.owl.carousel', function(event) {
-    $(this).find(".item").fadeIn(2500);
+    $(this).find(".item").show().addClass('fade-in-image');
 });
 
 $('.whyUsSlider').owlCarousel({
