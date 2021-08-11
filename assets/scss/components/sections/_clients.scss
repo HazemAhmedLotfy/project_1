@@ -90,6 +90,21 @@
     }
 }
 
+.logosSlider{
+    .item{
+        width: 100%;
+        .logoItem{
+            width: 100%;
+
+            img{
+                width: auto;
+                max-height: 70%;
+                max-width: 70%;
+            }
+        }
+    }
+}
+
 .clientSlider{
     .owl-stage{
         .owl-item{
@@ -128,18 +143,21 @@
             align-items: center;
         }
     }
+
+    .item{
+        opacity: 0 !important;
+    }
 }
 
 .fade-in-image {
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
+    animation: fadeIn 7s;
   }
+  
+  
   @keyframes fadeIn {
     0% {opacity:0;}
-    100% {opacity:1;}
+    50% {opacity:1;}
+    100% {display: block;}
   }
   
   @-moz-keyframes fadeIn {
@@ -161,3 +179,5 @@
     0% {opacity:0;}
     100% {opacity:1;}
   }
+
+  

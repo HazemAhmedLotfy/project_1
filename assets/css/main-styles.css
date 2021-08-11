@@ -654,6 +654,20 @@ body .modal-backdrop {
           transform: rotate(270deg);
 }
 
+.logosSlider .item {
+  width: 100%;
+}
+
+.logosSlider .item .logoItem {
+  width: 100%;
+}
+
+.logosSlider .item .logoItem img {
+  width: auto;
+  max-height: 70%;
+  max-width: 70%;
+}
+
 .clientSlider .owl-stage .owl-item {
   height: 20rem;
   display: -webkit-box;
@@ -710,20 +724,24 @@ body .modal-backdrop {
           align-items: center;
 }
 
+.clientCont .item {
+  opacity: 0 !important;
+}
+
 .fade-in-image {
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
+  -webkit-animation: fadeIn 7s;
+          animation: fadeIn 7s;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
+  }
+  100% {
+    display: block;
   }
 }
 

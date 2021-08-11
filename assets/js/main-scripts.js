@@ -20,9 +20,9 @@ document.getElementById("defaultOpen").click();
 
 $('.logosSlider').owlCarousel({
     loop: true,
-    margin: 0,
-    autoplay: true,
-    autoplayTimeout: 3000,
+    margin: 15,
+    //autoplay: true,
+    //autoplayTimeout: 3000,
     smartSpeed: 500,
     nav: true,
     dots: false,
@@ -45,13 +45,10 @@ $('.clientSlider').owlCarousel({
     loop: true,
     margin: 0,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 7000,
     smartSpeed: 500,
-    //nav: true,
     dots: false,
-    //navText: ['<i class="icon-arrow-down"></i>','<i class="icon-arrow-down"></i>'],
     lazyLoad:true,
-    //slideBy: 4,
     animateOut: 'fadeOut',
     responsive:{
         0:{
@@ -71,7 +68,7 @@ $('.clientSlider').on('translate.owl.carousel', function(event) {
 });
 
 $('.clientSlider').on('translated.owl.carousel', function(event) {
-    $(this).find(".item").show().addClass('fade-in-image');
+    $(this).find(".item").addClass('fade-in-image fade-in-image').show();
 });
 
 $('.whyUsSlider').owlCarousel({
